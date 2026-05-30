@@ -16,13 +16,23 @@ if __name__ == "__main__":
     firmare_bin = Path(args.stock_fw).read_bytes()
 
     approx_config_part = firmare_bin[0xf8000:0xf9000]
-    start_pos = approx_config_part.find(b"{")
-    end_pos = approx_config_part.find(b"}", start_pos)
-    if start_pos == -1 or end_pos == -1:
-        print("No config found")
-        exit(1)
-    
-    config = approx_config_part[start_pos + 1:end_pos]
+    start_pos = 0
+    while True:
+        start_pos = approx_config_part.find(b"{", start_pos)
+        if start_pos == -1:
+            print("No config found")
+            exit(1)
+        end_pos = approx_config_part.find(b"}", start_pos)
+        if end_pos == -1:
+            print("No config terminator found")
+            exit(1)
+        config = approx_config_part[start_pos + 1:end_pos]
+        if b"bt" in config and b"module" in config and b"jv" in config:
+            inner = config.find(b"{")
+            if inner != -1:
+                config = config[inner + 1:]
+            break
+        start_pos = start_pos + 1
 
     entries = [
         entry.split(":") for entry in config.decode().split(",")
@@ -87,7 +97,9 @@ if __name__ == "__main__":
         led_key = f"led{gang_index}_pin"
         if led_key in config_dict:
             pin = pin_map[config_dict[led_key]]
-            custom_config += f"I{pin};"
+            lv_key = f"led{gang_index}_lv"
+            inverted = lv_key in config_dict and config_dict[lv_key] == "0"
+            custom_config += f"I{pin}{'i' if inverted else ''};"
     
     print(config_dict)
     print(custom_config)
