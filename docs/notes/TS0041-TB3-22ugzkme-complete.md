@@ -4,7 +4,8 @@
 > **Z2M model:** `TS0041` (external converter required)
 > **Status:** Working — 3 devices confirmed
 
-![Product](https://ae01.alicdn.com/kf/Sc2b2a91ab4824cb9975ec12a8c6986f89.jpg)
+![TS0041 TB3 _TZ3000_22ugzkme 1-Button Zigbee Remote](../images/TS0041-TB3-22ugzkme.png)
+
 *[AliExpress listing](https://www.aliexpress.com/item/1005005401760152.html)*
 
 ---
