@@ -1,6 +1,10 @@
 #ifndef _APP_CFG_H_
 #define _APP_CFG_H_
 
+#define PULL_WAKEUP_SRC_PC2  PM_PIN_PULLDOWN_100K
+#define PC2_INPUT_ENABLE     1
+#define PC0_INPUT_ENABLE     1
+
 /*
  * Version Configuration
  */

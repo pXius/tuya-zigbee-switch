@@ -1792,5 +1792,33 @@
       "_TZ3000_rbl8c85w",
       "rbl8c85w"
     ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-b2596413.zigbee",
+    "fileVersion": 285356032,
+    "fileSize": 150418,
+    "url": "https://github.com/romasku/tuya-zigbee-switch/raw/refs/heads/main/bin/end_device/REMOTE_TUYA_BUTTON_TS0042_xr7itfxq_END_DEVICE/tlc_switch-1.1.2-b2596413.zigbee",
+    "imageType": 47009,
+    "manufacturerCode": 4417,
+    "sha512": "10164d7c3bcd56869618f9d64da2635996e01baefd55af5ed052621d1062d1dadd2c26a1d704a9b120935bf04ab205924b59772c65be19fa58154808060fe04f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_xr7itfxq",
+      "xr7itfxq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-b2596413-from_tuya.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 150418,
+    "url": "https://github.com/romasku/tuya-zigbee-switch/raw/refs/heads/main/bin/end_device/REMOTE_TUYA_BUTTON_TS0042_xr7itfxq_END_DEVICE/tlc_switch-1.1.2-b2596413-from_tuya.zigbee",
+    "imageType": 54179,
+    "manufacturerCode": 4417,
+    "sha512": "94106c790f6544b57aa7da173d5826abc8f0509a7a542d23b8a14518f2940939bae7ed936f6b504adf52f67fea00d574bcbf29ac23b1a5acfb59f1b43596cb7a",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_xr7itfxq",
+      "xr7itfxq"
+    ]
   }
 ]

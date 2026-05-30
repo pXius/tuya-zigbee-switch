@@ -3445,6 +3445,33 @@ REMOTE_TUYA_BUTTON_TS0041_2:
   info: Not working
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/403
   store: null
+REMOTE_TUYA_BUTTON_TS0042_xr7itfxq:
+  human_name: Tuya 2-button remote
+  category: remote
+  power: CR2430
+  neutral: without
+  output: nothing
+  device_type: end_device
+  stock_model_name: TS0042
+  stock_manufacturer_name: _TZ3000_xr7itfxq
+  stock_converter_manufacturer: Tuya
+  stock_converter_model: TS0042
+  override_z2m_device: null
+  tuya_module: ZT3L
+  mcu_family: Telink
+  mcu: TLSR8258
+  config_str: xr7itfxq;TS0042-custom;SC2d;ID7i;SB4d;IC0i;BTC4;M;
+  alt_config_str: null
+  old_manufacturer_names: null
+  old_zb_models: null
+  stock_manufacturer_id: 4417
+  stock_image_type: 54179
+  firmware_image_type: 47009
+  build: yes
+  status: in_progress
+  info: 2-gang, same capacitor+active HIGH design as TS0041-TB3
+  threads: null
+  store: null
 REMOTE_TUYA_SWITCH_TS0041:
   human_name: Tuya/Moes 1-gang scene switch
   category: remote
